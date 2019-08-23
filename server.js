@@ -30,6 +30,13 @@ app.post('/login', (req, res) => {
     }
 })
 
+// Health Check endpoint
+app.get('/', (req, res) => {
+    res.json({
+        status: 'UP'
+    })
+})
+
 app.get('/users', (req, res) => {
     res.json({
         success: true,
