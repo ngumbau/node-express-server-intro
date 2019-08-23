@@ -14,6 +14,10 @@ app.get('/users', (req, res) => {
     })
 })
 
+app.get('/users/:id', (req,res) => {
+    console.log(req.params.id)
+})
+
 app.listen(8000, () => {
     console.log("server is running")
 })
